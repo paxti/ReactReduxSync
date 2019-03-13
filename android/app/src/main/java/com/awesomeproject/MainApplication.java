@@ -1,4 +1,4 @@
-package com.awesomeproject;
+package com.reactreduxsync;
 
 import android.app.Application;
 
