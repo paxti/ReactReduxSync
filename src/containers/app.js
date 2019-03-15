@@ -3,7 +3,7 @@ import MainContainer from './MainContainer';
 
 const App = createStackNavigator({
   Home: {
-    screen: MainContainer,
+    screen: MainContainer
   }
 });
 

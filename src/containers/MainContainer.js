@@ -1,39 +1,47 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { View, Text } from 'react-native';
 import { connect } from 'react-redux';
 import * as types from '../constants/ActionTypes';
 
-
 class MainContainer extends React.Component {
-
   componentDidMount() {
     this.props.doSomething();
   }
 
   render() {
-    return ( 
+    const { test } = this.props;
+    return (
       <View>
-        <Text>Hello {this.props.test}</Text>
+        <Text>Hello {test}</Text>
       </View>
     );
   }
 }
 
-const mapStateToProps = (state) => {
+const mapStateToProps = state => {
   const { test } = state;
   return {
     test
   };
 };
 
-const mapDispatchToProps = (dispatch) => {
+const mapDispatchToProps = dispatch => {
   return {
     doSomething: () => {
       dispatch({
         type: types.DO_SOMETHING
-      })
+      });
     }
   };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(MainContainer);
+MainContainer.propTypes = {
+  test: PropTypes.string,
+  doSomething: PropTypes.func
+};
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(MainContainer);
