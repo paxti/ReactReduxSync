@@ -1,7 +1,7 @@
 import * as types from '../constants/ActionTypes';
 
 const initialState = {
-  test: false
+  test: ''
 };
 
 export default function rootReducer(state = initialState, action) {
