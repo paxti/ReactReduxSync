@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { View, Text } from 'react-native';
+import { View, FlatList, Text } from 'react-native';
 import { connect } from 'react-redux';
 import * as types from '../constants/ActionTypes';
 
@@ -13,7 +13,8 @@ class MainContainer extends React.Component {
     const { test } = this.props;
     return (
       <View>
-        <Text>Hello {test}</Text>
+        <Text>{test}</Text>
+        <FlatList data={[{}, {}, {}, {}, {}]} renderItem={() => <Text />} />
       </View>
     );
   }
