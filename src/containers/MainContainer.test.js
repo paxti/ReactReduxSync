@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, FlatList, Text } from 'react-native';
 import { shallow } from 'enzyme';
-import { createMockStore } from 'redux-test-utils';
+import configureStore from 'redux-mock-store';
 
 import MainContainer from './MainContainer';
 
@@ -10,7 +10,8 @@ describe('Main Container', () => {
   let testObject;
 
   beforeEach(() => {
-    store = createMockStore({});
+    const mockStore = configureStore([]);
+    store = mockStore({});
     testObject = shallow(<MainContainer />, { context: { store } }).dive();
   });
 
