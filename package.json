@@ -8,16 +8,16 @@
   },
   "dependencies": {
     "@babel/core": "7.3.4",
-    "@babel/runtime": "7.3.4",
     "@babel/preset-env": "^7.3.4",
     "@babel/preset-react": "^7.0.0",
+    "@babel/runtime": "7.3.4",
     "prop-types": "^15.7.2",
     "react": "16.8.3",
     "react-native": "0.59.0",
     "react-native-gesture-handler": "^1.1.0",
     "react-navigation": "^3.3.2",
-    "react-redux": "^5.0.1",
-    "redux": "^4.0.1"
+    "react-redux": "5.1.1",
+    "redux": "4.0.1"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
@@ -44,10 +44,9 @@
     "react-dom": "^16.8.4",
     "react-test-renderer": "16.8.3",
     "redux-devtools": "^3.5.0",
-    "redux-devtools-extension": "^2.13.8",
-    "redux-logger": "^3.0.6",
     "redux-mock-store": "^1.5.3",
-    "redux-test-utils": "^0.3.0"
+    "redux-devtools-extension": "^2.13.8",
+    "redux-logger": "^3.0.6"
   },
   "jest": {
     "preset": "react-native",
