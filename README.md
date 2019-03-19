@@ -2,8 +2,7 @@
 
 # ReactReduxSync
 
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/c0dca90cb9e04c758d39fe28e52ab081)](https://app.codacy.com/app/psyfungus/ReactReduxSync?utm_source=github.com&utm_medium=referral&utm_content=paxti/ReactReduxSync&utm_campaign=Badge_Grade_Settings)
-
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/956b8ff41be348908c96d596ce805b4a)](https://www.codacy.com/app/paxti/ReactReduxSync?utm_source=github.com&utm_medium=referral&utm_content=paxti/ReactReduxSync&utm_campaign=Badge_Grade)
 
 <p>
   Proof of concept application to test if it's possible to use Redux as kind of middleware to combine data from multiple sources (for example AWS AppSync and public API).
